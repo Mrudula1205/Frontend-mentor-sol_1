@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Fraunces&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+    body {
+      background-color: hsl(30, 38%, 92%); 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 10vh; 
+    }
+      img.image{
+        position: relative; 
+        margin-left: -180px; 
+        width: 300px; 
+        height: 450px; 
+        top: 540px; 
+        left: 30px; 
+        border-top-left-radius: 10px; 
+        border-bottom-left-radius: 10px;
+      }
+
+      div.poster{
+        height: 450px; 
+        width: 300px; 
+        background-color: hsl(0, 0%, 100%);
+        position: relative; 
+        top: 86px; 
+        left: 150px; 
+        border-top-right-radius: 10px; 
+        border-bottom-right-radius: 10px;
+      }
+
+      p.text1{
+        font-family: 'Montserrat',serif;
+        letter-spacing: 5px;
+        color: hsl(228, 12%, 48%);
+        font-size: 14px; 
+        margin-left: 40px; 
+        margin-top: 10px; 
+      }
+
+      h1.text2{
+        color: hsl(212, 21%, 14%); 
+        font-family: 'Fraunces'; 
+        margin-left: 40px; 
+        margin-right: 65px; 
+        font-weight: 1100;
+      }
+      
+      p.text3{
+        color:hsl(228, 12%, 48%);
+        font-size: 14px; 
+        margin-left: 40px; 
+        margin-right: 75px; 
+        font-weight: 400;
+        
+      }
+      
+      span.text4{
+        font-family: 'Fraunces';
+        font-size: 30px; 
+        margin-left: 40px; 
+        color: hsl(158, 36%, 37%); 
+        margin-top: 30px;
+        font-weight: 700;
+      }
+      
+      span.text5{
+        font-size: 12px; 
+        color:hsl(228, 12%, 48%);
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+
+      button.submit{
+        background-color: hsl(158, 36%, 37%); 
+        color: hsl(0, 0%, 100%); 
+        border-radius: 10px; 
+        border: none; 
+        margin: 5px; 
+        align-items: center; 
+        padding: 14px 70px; 
+        position: absolute; 
+        left: 9%; 
+        top: 80%; 
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      button.submit:hover{
+        background-color: rgb(2, 74, 2);
+      }
+
+  </style>
+</head>
+<body bgcolor="hsl(30, 38%, 92%)">
+  <section>
+    <div>
+      <img src="images/image-product-desktop.jpg" class="image">
+    </div>
+    <div class="poster"><br>
+        <p class="text1">PERFUME</p> <h1 class="text2"><b>Gabrielle<br> Essence Eau De Parfum</b></h1> 
+        <p class="text3">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator 
+          for the House of CHANEL</p>
+        <p> <br><span class="text4"><b>$149.99</b></span>  <span class="text5"><s>$169.99</s></span> </p> 
+        <button type="submit" class="submit">&nbsp;&nbsp;<img src="images/icon-cart.svg"> Add To Cart </button>
+    </div>
+  </section>
+   
+  
+  
+
+  
+</body>
+</html>
